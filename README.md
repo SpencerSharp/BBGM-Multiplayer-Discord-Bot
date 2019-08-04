@@ -1,4 +1,4 @@
-# This is v0.0 of the BBGM Multiplayer Discord Bot.
+# This is v0.1 of the BBGM Multiplayer Discord Bot.
 
 ### The vision behind this bot is to provide a complete multiplayer BBGM experience through the use of a discord bot.
 #### We want people to be able to create leagues, join leagues, execute trades, and more!
@@ -17,7 +17,7 @@
 		- All attributes
 		- Previous season PER and EWA
 
-Currently we are in a phase of defining the spec and acquiring the inherited codebase from Reddit's /u/nesyt
+We have acquired the codebase from /u/nesyt of Reddit! Still working on ensuring that the licensing is okay with him, but we're on track to hit v1 in the next couple weeks.
 
 ### Planned v1 feature list
 - Ability to create, invite, and approve GMs in your league
