@@ -1,0 +1,13 @@
+BBGM Multiplayer Bot Version <version>
+
+usage: help
+
+
+
+Here are the major commands used for most people with this bot:
+
+create-league <name>
+import-league <name> <url>
+set-league <name>
+offer-trade <player> <team>
+accept-trade <player> <team>
