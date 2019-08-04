@@ -10,10 +10,18 @@ V1
 LEAGUE MANAGEMENT
 	create-league <name>
 	import-league <name> <url>
+	join-league <name>
 	set-league <name>
+	show-leagues
+
+MODERATION
+	add-mod <team>
+	show-offers
+	show-trades	
 
 EXPORT MANAGEMENT
-	
+	show-export <link> <name>
+	upload-export <link> <name>
 
 TRADES
 	create-trade <team>
@@ -21,7 +29,11 @@ TRADES
 	offer-trade <team>
 	cancel-trade
 	accept-trade <player> <team>
+
+FREE AGENCY
 	offer-player <player> <contract>
+
+
 
 V2
 LEAGUE MANAGEMENT
