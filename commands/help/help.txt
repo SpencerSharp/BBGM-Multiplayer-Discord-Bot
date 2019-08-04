@@ -6,8 +6,28 @@ usage: help
 
 Here are the major commands used for most people with this bot:
 
-create-league <name>
-import-league <name> <url>
-set-league <name>
-offer-trade <player> <team>
-accept-trade <player> <team>
+V1
+LEAGUE MANAGEMENT
+	create-league <name>
+	import-league <name> <url>
+	set-league <name>
+
+EXPORT MANAGEMENT
+	
+
+TRADES
+	create-trade <team>
+	add-to-trade <asset> <optional team>
+	offer-trade <team>
+	cancel-trade
+	accept-trade <player> <team>
+	offer-player <player> <contract>
+
+V2
+LEAGUE MANAGEMENT
+	link-server <server>
+
+EXPORT MANAGEMENT
+	show-history
+	revert-to-version
+	get-version

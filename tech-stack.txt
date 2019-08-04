@@ -1,0 +1,8 @@
+Planned dataflow:
+
+Discord bot running on EC2
+Database running on Amazon S3
+
+Each league is capped at 5 export requests per day.
+
+When an export is requested by a moderator of the league, the EC2 instance will
