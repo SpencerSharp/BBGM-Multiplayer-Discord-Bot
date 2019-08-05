@@ -1,0 +1,5 @@
+#!/bin/bash
+print_something () {
+	. ./Users/spencersharp/Documents/Coding/BBGM/BBGM-Multiplayer-Discord-Bot/dev/bot-cli/res/goto-path 
+}
+print_something

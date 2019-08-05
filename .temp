@@ -1,0 +1,10 @@
+#!/bin/bash
+cd ~/Documents/Coding/BBGM/BBGM-Multiplayer-Discord-Bot/
+cd format-json
+rm -rf build/*
+cd src
+tsc team-players.ts --resolveJsonModule
+mv team-players.js ../build/
+echo `pwd`
+cd ../build
+node team-players.js

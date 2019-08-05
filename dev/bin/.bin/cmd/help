@@ -1,0 +1,4 @@
+#!/bin/bash
+cd $BOT_CLI
+cd ../res
+echo `ls`

@@ -1,0 +1,17 @@
+{
+  "name": "format-json",
+  "version": "1.0.0",
+  "description": "Package that formats and condenses BBGM export JSON into mandatory backend data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.9"
+  }
+}

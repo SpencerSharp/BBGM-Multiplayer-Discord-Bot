@@ -1,0 +1,13 @@
+#!/bin/bash
+INPUT=$2
+cd $BOT_CLI
+if [[ $CMD != "i" ]]
+then
+	./.bin/exec-cmd $@
+	exit 1
+fi
+while true; do
+	read INPUT
+	./.bin/exec-cmd $@
+done
+echo Exiting

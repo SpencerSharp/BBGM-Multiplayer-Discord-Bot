@@ -1,0 +1,7 @@
+#!/bin/bash
+CMD=$2
+if [[ $CMD == "" ]]
+then
+	CMD="set-path"
+fi
+./$1$CMD

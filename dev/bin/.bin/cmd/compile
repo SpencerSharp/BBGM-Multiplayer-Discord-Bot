@@ -1,0 +1,5 @@
+#!/bin/bash
+cd $BOT_CLI
+cd ..
+cd ../scripts
+./compile.sh
