@@ -16,7 +16,15 @@ bot.on('ready', function (evt) {
 bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `!`
+	;
     if (message.substring(0, 1) === '!') {
+		var ServerID = bot.channels[channelID].guild_id;
+		console.log(ServerID);
+		if(ServerID === '159396339761938432' || ServerID === '607415631444312067') {
+			var Table = "ABF";
+		} else if (ServerID === '461547461438210051') {var Table = "IBF";}
+		  else if (ServerID === '599788255130550339') {var Table = "AHBA";}
+			
         if (message.username === 'LABron23james') {
             return
         }
@@ -38,7 +46,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                             S: fullName
                         }
                     },
-                    TableName: "ABF"
+                    TableName: Table
                 };
                 dynamo.getItem(params, function(err, data) {
                     if (err) {

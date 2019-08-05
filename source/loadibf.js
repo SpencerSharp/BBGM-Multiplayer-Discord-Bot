@@ -33,13 +33,13 @@ function putPlayer(name, ratings, old_ovr, stats, age, born, contract) {
                 S: contract
             }
         },
-        TableName: "ABF"
+        TableName: "IBF"
     };
     dynamo.putItem(params, function(err, data) { if (err) console.log(JSON.stringify(params) + '\n' + err, err.stack); });
     sleep(100);
 }
-var CURRENT_YEAR = 2057
-var league = require('./' + CURRENT_YEAR + '.json');
+var CURRENT_YEAR = 2109
+var league = require('./ibf' + CURRENT_YEAR + '.json');
 players = league['players'];
 var i = 0
 for (let p of players) {
