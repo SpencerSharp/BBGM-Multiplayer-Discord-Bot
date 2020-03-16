@@ -26,7 +26,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		if(ServerID === '159396339761938432' || ServerID === '607415631444312067') {
 			var Table = "ABF";
 		} else if (ServerID === '461547461438210051') {var Table = "IBF";}
-		  else if (ServerID === '599788255130550339') {var Table = "AHBA";}
+		  else if (ServerID === '599788255130550339') {var Table = "AHBA";}//
+		  else if (ServerID === '687772178116247554') {var Table = "DRBL";}
 	
         if (message.username === 'LABron23james') {
             return
@@ -73,6 +74,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                 for (const rk of Object.keys(ratings)) {
                                     r[rk] = Math.round(ratings[rk])
                                 }
+								if (ServerID === '687772178116247554') {r['ovr'] = 0;}
                                 ratings =
 `
 **Overall: ${r['ovr']}                                                        Potential: ${r['pot']}**
