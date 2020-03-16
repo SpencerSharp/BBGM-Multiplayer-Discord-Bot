@@ -43,6 +43,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 if (ask == 'ratings' || ask == 'stats' || ask == 'both') {
                     args = args.splice(1)
                 }
+				if (ServerID === '687772178116247554') {ask='stats';}
                 var fullName = args.join(' ').trim();
                 var params = {
                     Key: {
@@ -74,7 +75,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                 for (const rk of Object.keys(ratings)) {
                                     r[rk] = Math.round(ratings[rk])
                                 }
-								if (ServerID === '687772178116247554') {r['ovr'] = 0;}
+								
                                 ratings =
 `
 **Overall: ${r['ovr']}                                                        Potential: ${r['pot']}**
@@ -92,9 +93,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                 if (s['season']) {
                                     stats =
 `
-
-Last season's (${s['season']}) stats (at ${last_ovr} OVR):
-PER: ${s['per'].toFixed(2)}         EWA: ${s['ewa'].toFixed(2)}`
+Basic                           Advanced
+ Points: ${(s['pts'] / s['gp']).toFixed(3)}             EWA: ${s['ewa'].toFixed(3)}
+ Rebounds: ${s['trbp'].toFixed(3)}           OWS: ${s['ows'].toFixed(3)}
+ Assists: ${s['astp'].toFixed(3)}            DWS: ${s['dws'].toFixed(3)}
+ Steals: ${s['stlp'].toFixed(3)}             ORTG: ${s['ortg'].toFixed(3)}
+ Blocks: ${s['blkp'].toFixed(3)}             DRTG: ${s['drtg'].toFixed(3)}
+ FG%: ${(s['fg'] / s['fga']).toFixed(3)}                PER: ${s['per'].toFixed(3)} 
+ 3PT%: ${((s['fg']-s['fgAtRim']-s['fgLowPost']-s['fgMidRange']) / (s['fga']-s['fgaAtRim']-s['fgaLowPost']-s['fgaMidRange'])).toFixed(3)} 
+ Turnovers: ${(s['tov'] / s['gp']).toFixed(3)} `
                                     info = info + stats
                                 }
                             }
